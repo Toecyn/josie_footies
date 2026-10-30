@@ -22,5 +22,5 @@ Static, dependency-free storefront built from the Stitch design export (`DESIGN.
 - Checkout sends a formatted order (items, sizes, total, delivery details) to the WhatsApp concierge (+234 806 694 0895). Connect Paystack for direct card payment when ready.
 - The newsletter form validates the email but does not store it yet. Connect it to Mailchimp, Brevo, or similar.
 - Bag and wishlist persist in the visitor's browser (localStorage).
-- Dark mode follows the visitor's system setting until they use the header toggle, which is then remembered. Colours are CSS variables in `src/input.css` (light on `:root`, dark on `.dark`); `ink`/`paper` stay fixed for photo overlays and modal backdrops.
+- The site uses a single dark theme. Colours are CSS variables on `:root` in `src/input.css`; `ink`/`paper` are fixed colours for photo overlays and modal backdrops.
 - Deploy anywhere static: Netlify, Vercel, GitHub Pages, cPanel.

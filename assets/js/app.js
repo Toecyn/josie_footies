@@ -492,7 +492,6 @@
       case 'open-cart': openDrawer('cart'); break;
       case 'open-wishlist': openDrawer('wishlist'); break;
       case 'open-search': openSearch(); break;
-      case 'toggle-theme': toggleTheme(); break;
       case 'close-search':
       case 'close-overlays':
       case 'close-quickview': closeAll(); break;
@@ -605,32 +604,6 @@
     if (heroBg) requestAnimationFrame(() => heroBg.classList.remove('scale-105'));
   }
 
-  // ---------- Theme ----------
-  // The <head> script applies the initial theme; this keeps it in sync with the toggle and the OS setting.
-  const THEME_KEY = 'jf-theme';
-  const darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
-
-  function applyTheme(dark) {
-    document.documentElement.classList.toggle('dark', dark);
-    $('meta[name="theme-color"]').content = dark ? '#121211' : '#fbf9f4';
-    $$('[data-action="toggle-theme"]').forEach((b) => b.setAttribute('aria-pressed', String(dark)));
-  }
-
-  function toggleTheme() {
-    const dark = !document.documentElement.classList.contains('dark');
-    try { localStorage.setItem(THEME_KEY, dark ? 'dark' : 'light'); } catch (_) { /* ignore */ }
-    applyTheme(dark);
-  }
-
-  function initTheme() {
-    applyTheme(document.documentElement.classList.contains('dark'));
-    darkQuery.addEventListener('change', (e) => {
-      let saved = null;
-      try { saved = localStorage.getItem(THEME_KEY); } catch (_) { /* ignore */ }
-      if (!saved) applyTheme(e.matches);
-    });
-  }
-
   function initFromHash() {
     const m = location.hash.match(/^#shop\/(\w+)/);
     if (m) {
@@ -641,7 +614,6 @@
 
   // ---------- Boot ----------
   load();
-  initTheme();
   hydrateImages();
   renderGrid();
   renderCart();

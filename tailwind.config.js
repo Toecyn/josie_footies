@@ -1,7 +1,7 @@
 /** Design tokens from DESIGN.md (Josie Footies Luxury Editorial). */
 
-// Themed tokens read RGB channels from CSS variables set in src/input.css (light on :root, dark on .dark),
-// so every utility, opacity modifier included, follows the active theme.
+// Themed tokens read RGB channels from CSS variables set on :root in src/input.css,
+// so the palette lives in one place and opacity modifiers still work.
 const themed = [
   'surface', 'surface-dim', 'surface-bright', 'surface-container-lowest', 'surface-container-low',
   'surface-container', 'surface-container-high', 'surface-container-highest', 'on-surface',
@@ -12,7 +12,6 @@ const themed = [
 
 module.exports = {
   content: ['./index.html', './assets/js/**/*.js'],
-  darkMode: 'class',
   theme: {
     // Architectural standard: 0px radius everywhere.
     borderRadius: { none: '0', DEFAULT: '0' },
@@ -23,7 +22,7 @@ module.exports = {
         'secondary-fixed': '#ffdea7',
         'secondary-fixed-dim': '#e5c285',
         gold: '#c6a56b',
-        // Photo overlays and modal backdrops stay dark in both themes.
+        // Fixed ink/paper for photo overlays and modal backdrops.
         ink: '#111111',
         paper: '#f7f5f0',
       },

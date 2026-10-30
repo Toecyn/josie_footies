@@ -5,17 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Josie Footies | Handcrafted Luxury Footwear, Ibadan &amp; Lagos</title>
   <meta name="description" content="Thoughtfully crafted unisex footwear and leather goods, handmade in our Ibadan and Lagos ateliers. In every step you take, be bold." />
-  <meta name="theme-color" content="#fbf9f4" />
-  <script>
-    /* Apply the saved theme (or the system preference) before first paint to avoid a flash. */
-    (function () {
-      var saved = null;
-      try { saved = localStorage.getItem('jf-theme'); } catch (_) { /* storage unavailable */ }
-      var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
-      document.documentElement.classList.toggle('dark', dark);
-      document.querySelector('meta[name="theme-color"]').content = dark ? '#121211' : '#fbf9f4';
-    })();
-  </script>
+  <meta name="theme-color" content="#121211" />
   <meta property="og:title" content="Josie Footies | Make Every Step A Statement" />
   <meta property="og:description" content="Handcrafted unisex footwear and leather goods from Ibadan and Lagos." />
   <meta property="og:type" content="website" />
@@ -63,10 +53,6 @@
         <a href="https://wa.me/2348066940895" target="_blank" rel="noopener noreferrer" class="hidden md:flex items-center gap-1 label text-on-surface-variant hover:text-primary transition-colors" title="Direct WhatsApp Concierge">
           <span class="material-symbols-outlined text-[18px] text-secondary">chat</span><span>Concierge</span>
         </a>
-        <button type="button" class="text-on-surface-variant hover:text-primary transition-colors flex" aria-label="Dark mode" aria-pressed="false" data-action="toggle-theme" title="Switch light / dark">
-          <span class="material-symbols-outlined text-[22px] dark:hidden">dark_mode</span>
-          <span class="material-symbols-outlined text-[22px] hidden dark:inline">light_mode</span>
-        </button>
         <button type="button" class="text-on-surface-variant hover:text-primary transition-colors flex" aria-label="Search the archive" data-action="open-search">
           <span class="material-symbols-outlined text-[22px]">search</span>
         </button>
