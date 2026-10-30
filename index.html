@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Josie Footies | Handcrafted Luxury Footwear, Ibadan &amp; Lagos</title>
+  <meta name="description" content="Thoughtfully crafted unisex footwear and leather goods, handmade in our Ibadan and Lagos ateliers. In every step you take, be bold." />
+  <meta name="theme-color" content="#fbf9f4" />
+  <meta property="og:title" content="Josie Footies | Make Every Step A Statement" />
+  <meta property="og:description" content="Handcrafted unisex footwear and leather goods from Ibadan and Lagos." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23111'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='16' text-anchor='middle' fill='%23c6a56b'%3EJF%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[200] focus:bg-obsidian focus:text-ivory focus:px-4 focus:py-2 label">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header id="site-header" class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-md border-b border-transparent transition-colors">
+    <div class="bg-surface-container-high text-on-surface-variant label px-margin-mobile lg:px-margin py-2 flex items-center justify-between gap-4">
+      <span class="font-serif italic text-[11px] tracking-normal normal-case text-on-surface">“...In every step you take, be bold.”</span>
+      <div class="flex items-center gap-space-sm">
+        <span class="hidden sm:inline">Worldwide Shipping &amp; Nigeria Same-Day Express</span>
+        <span class="hidden lg:inline text-secondary">•</span>
+        <span class="hidden lg:inline text-on-surface">Lagos &amp; Ibadan Ateliers</span>
+      </div>
+    </div>
+    <div class="h-20 w-full px-margin-mobile lg:px-margin flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <button type="button" class="xl:hidden -ml-1 p-1 text-primary" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false" data-action="open-menu">
+          <span class="material-symbols-outlined text-[26px]">menu</span>
+        </button>
+        <a href="#top" class="flex items-center gap-3" aria-label="Josie Footies home">
+          <img data-img="logo" alt="" class="h-8 w-auto object-contain bg-transparent" data-hide-on-error />
+          <span class="font-serif text-[20px] sm:text-headline-sm uppercase tracking-wider text-primary leading-none">Josie Footies</span>
+        </a>
+      </div>
+
+      <nav class="hidden xl:flex items-center gap-space-md 2xl:gap-space-lg whitespace-nowrap" aria-label="Primary">
+        <a href="#collection" data-filter-link="all" class="nav-link label-md text-on-surface-variant hover:text-primary transition-colors underline-offset-8 decoration-secondary">New Arrivals</a>
+        <a href="#collection" data-filter-link="shoes" class="nav-link label-md text-on-surface-variant hover:text-primary transition-colors underline-offset-8 decoration-secondary">Shoes</a>
+        <a href="#collection" data-filter-link="sandals" class="nav-link label-md text-on-surface-variant hover:text-primary transition-colors underline-offset-8 decoration-secondary">Sandals</a>
+        <a href="#collection" data-filter-link="slippers" class="nav-link label-md text-on-surface-variant hover:text-primary transition-colors underline-offset-8 decoration-secondary">Slippers</a>
+        <a href="#collection" data-filter-link="bags" class="nav-link label-md text-on-surface-variant hover:text-primary transition-colors underline-offset-8 decoration-secondary">Bags</a>
+        <a href="#heritage" class="nav-link label-md text-on-surface-variant hover:text-primary transition-colors underline-offset-8 decoration-secondary">Our Story</a>
+      </nav>
+
+      <div class="flex items-center gap-4 sm:gap-space-md">
+        <span class="hidden sm:flex items-center label-md text-on-surface-variant" title="Prices shown in Nigerian Naira"><span class="text-secondary mr-1">NGN</span>₦</span>
+        <a href="https://wa.me/2348066940895" target="_blank" rel="noopener noreferrer" class="hidden md:flex items-center gap-1 label text-on-surface-variant hover:text-primary transition-colors" title="Direct WhatsApp Concierge">
+          <span class="material-symbols-outlined text-[18px] text-secondary">chat</span><span>Concierge</span>
+        </a>
+        <button type="button" class="text-on-surface-variant hover:text-primary transition-colors flex" aria-label="Search the archive" data-action="open-search">
+          <span class="material-symbols-outlined text-[22px]">search</span>
+        </button>
+        <button type="button" class="relative text-on-surface-variant hover:text-primary transition-colors flex" aria-label="Wishlist" data-action="open-wishlist">
+          <span class="material-symbols-outlined text-[22px]">favorite</span>
+          <span data-count="wishlist" class="absolute -top-1 -right-2 bg-secondary text-on-secondary label tracking-normal min-w-4 h-4 px-0.5 flex items-center justify-center">0</span>
+        </button>
+        <button type="button" class="relative text-on-surface-variant hover:text-primary transition-colors flex" aria-label="Shopping bag" data-action="open-cart">
+          <span class="material-symbols-outlined text-[22px]">shopping_bag</span>
+          <span data-count="cart" class="absolute -top-1 -right-2 bg-obsidian text-ivory label tracking-normal min-w-4 h-4 px-0.5 flex items-center justify-center">0</span>
+        </button>
+        <button type="button" class="hidden sm:flex w-8 h-8 bg-obsidian items-center justify-center hover:bg-charcoal transition-colors" aria-label="Private client" data-info="private-client">
+          <span class="material-symbols-outlined text-ivory text-[18px]">person</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="fixed inset-0 z-[90] hidden" role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="absolute inset-0 bg-obsidian/50" data-action="close-menu"></div>
+    <div class="relative h-full w-full max-w-sm bg-surface flex flex-col">
+      <div class="h-20 px-margin-mobile flex items-center justify-between border-b border-stone">
+        <span class="font-serif text-headline-sm uppercase tracking-wider">Josie Footies</span>
+        <button type="button" aria-label="Close menu" data-action="close-menu" class="p-1"><span class="material-symbols-outlined text-[24px]">close</span></button>
+      </div>
+      <nav class="flex-1 overflow-y-auto px-margin-mobile py-space-md flex flex-col" aria-label="Mobile">
+        <a href="#collection" data-filter-link="all" class="py-4 border-b border-stone font-serif text-headline-sm">New Arrivals</a>
+        <a href="#collection" data-filter-link="shoes" class="py-4 border-b border-stone font-serif text-headline-sm">Shoes</a>
+        <a href="#collection" data-filter-link="sandals" class="py-4 border-b border-stone font-serif text-headline-sm">Sandals</a>
+        <a href="#collection" data-filter-link="slippers" class="py-4 border-b border-stone font-serif text-headline-sm">Slippers</a>
+        <a href="#collection" data-filter-link="platforms" class="py-4 border-b border-stone font-serif text-headline-sm">Platforms</a>
+        <a href="#collection" data-filter-link="bags" class="py-4 border-b border-stone font-serif text-headline-sm">Bags</a>
+        <a href="#heritage" class="py-4 border-b border-stone font-serif text-headline-sm italic">Our Story</a>
+        <button type="button" data-info="private-client" class="py-4 text-left label-md text-on-surface-variant">Private Client</button>
+      </nav>
+      <div class="p-margin-mobile bg-surface-container-low">
+        <a href="https://wa.me/2348066940895" target="_blank" rel="noopener noreferrer" class="btn-primary w-full"><span class="material-symbols-outlined text-[18px] text-gold">chat</span>WhatsApp Concierge</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main" class="w-full">
+    <!-- ============ HERO ============ -->
+    <section id="top" class="relative w-full min-h-[100svh] lg:min-h-[942px] flex items-center justify-center overflow-hidden pt-28 bg-surface-container-low">
+      <div class="absolute inset-0" aria-hidden="true">
+        <div data-bg="hero" class="w-full h-full bg-cover bg-center scale-105 transition-transform duration-[2500ms]" data-hero-bg></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-surface/20"></div>
+        <div class="absolute inset-0 bg-primary/20 backdrop-blur-[1px]"></div>
+      </div>
+      <div class="relative z-10 w-full max-w-canvas mx-auto px-margin-mobile lg:px-margin py-space-xl flex flex-col items-center text-center">
+        <div class="flex items-center gap-space-xs mb-space-md bg-surface/85 backdrop-blur-md px-space-md py-1.5 hairline">
+          <span class="w-1.5 h-1.5 bg-gold"></span>
+          <span class="label text-primary">The Art Of Every Step • Editorial 2025</span>
+        </div>
+        <h1 class="font-serif text-headline-xl-mobile md:text-headline-xl text-primary max-w-4xl mb-space-md">
+          Make Every Step <span class="italic text-secondary">A Statement.</span>
+        </h1>
+        <p class="text-body-lg text-on-surface-variant max-w-2xl mb-space-lg">
+          Discover thoughtfully crafted unisex footwear and leather goods designed for those who move with intention. Handmade in our Ibadan &amp; Lagos ateliers.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center gap-space-sm w-full sm:w-auto">
+          <a href="#collection" class="btn-primary w-full sm:w-auto">Explore Collection</a>
+          <a href="#heritage" class="btn w-full sm:w-auto bg-surface-container text-primary hover:bg-surface-container-highest">Discover Our Story</a>
+        </div>
+        <div class="mt-space-xl pt-space-md flex flex-col items-center gap-2">
+          <span class="font-serif italic text-secondary text-base">“...In every step you take, be bold.”</span>
+          <div class="flex items-center gap-space-sm text-on-surface-variant label">
+            <span>Ibadan</span><span class="text-secondary">•</span><span>Lagos</span><span class="text-secondary">•</span><span>Worldwide Delivery</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PHILOSOPHY ============ -->
+    <section class="w-full py-space-xl px-margin-mobile lg:px-margin max-w-canvas mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+        <div class="lg:col-span-5 flex flex-col justify-center lg:pr-space-md order-2 lg:order-1 reveal">
+          <div class="flex items-center gap-3 mb-space-sm">
+            <span class="label text-secondary">Philosophy &amp; Silhouettes</span>
+            <div class="h-px w-12 bg-gold/60"></div>
+          </div>
+          <h2 class="font-serif text-headline-lg-mobile md:text-headline-lg text-primary mb-space-md">
+            Style Is How You Walk <span class="italic">Into The World.</span>
+          </h2>
+          <div class="relative pl-8 pr-4 py-4 mb-space-md bg-surface-container-low">
+            <span class="absolute left-2 top-1 font-serif text-headline-lg leading-none text-gold/50 select-none" aria-hidden="true">“</span>
+            <p class="text-body-lg text-on-surface">
+              At Josie Footies, we believe every step tells a story. Through thoughtful craftsmanship, distinctive designs and an appreciation for individual expression, we create footwear and accessories that help you make yours unforgettable.
+            </p>
+          </div>
+          <p class="text-body-md text-on-surface-variant mb-space-lg">
+            From the vibrant pulse of Ibadan’s historic Ring Road to the contemporary urban cadence of Gbagada in Lagos, our craftspeople select full-grain calf leathers, shaping soles that yield enduring comfort with unapologetic architectural stature.
+          </p>
+          <dl class="grid grid-cols-3 gap-space-sm py-space-sm bg-surface-container px-space-md">
+            <div class="flex flex-col-reverse"><dt class="label text-on-surface-variant mt-1">Artisan Handcrafted</dt><dd class="font-serif text-[20px] sm:text-headline-sm text-primary font-semibold">100%</dd></div>
+            <div class="flex flex-col-reverse"><dt class="label text-on-surface-variant mt-1">Lagos Express</dt><dd class="font-serif text-[20px] sm:text-headline-sm text-primary font-semibold">48 Hrs</dd></div>
+            <div class="flex flex-col-reverse"><dt class="label text-on-surface-variant mt-1">Custom Sizing</dt><dd class="font-serif text-[20px] sm:text-headline-sm text-primary font-semibold">EU 38–46</dd></div>
+          </dl>
+        </div>
+        <div class="lg:col-span-7 grid grid-cols-12 gap-gutter-mobile md:gap-gutter order-1 lg:order-2 reveal">
+          <figure class="col-span-7">
+            <div class="aspect-[3/4] w-full overflow-hidden bg-surface-container">
+              <img data-img="plate01" alt="Master craftsman hands skiving and stitching burnished saddle-brown leather beside wooden shoe lasts" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+            </div>
+            <figcaption class="mt-space-xs label text-on-surface-variant">Plate 01 • Ibadan Sole Cutting Atelier</figcaption>
+          </figure>
+          <div class="col-span-5 pt-12 lg:pt-20">
+            <figure>
+              <div class="aspect-[3/4] w-full overflow-hidden bg-surface-container-high">
+                <img data-img="plate02" alt="Obsidian black hand-woven leather mules resting on warm limestone" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              </div>
+              <figcaption class="mt-space-xs label text-on-surface-variant">Plate 02 • Monarch Slipper Silhouette</figcaption>
+            </figure>
+            <div class="mt-space-md p-space-sm bg-surface-container-highest border-l border-gold">
+              <p class="label text-primary mb-1">Maison Note</p>
+              <p class="text-body-sm text-on-surface-variant">Each pair requires forty-eight individual hand processes from initial skiving to final burnished edge waxing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COLLECTION ============ -->
+    <section id="collection" class="w-full bg-surface-container-low">
+      <div class="py-space-xl px-margin-mobile lg:px-margin max-w-canvas mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-md">
+          <div>
+            <div class="flex items-center gap-space-xs mb-2">
+              <span class="w-2 h-2 bg-gold"></span>
+              <span class="label text-secondary">Autumn / Harvest Archive</span>
+            </div>
+            <h2 class="font-serif text-headline-lg-mobile md:text-headline-lg text-primary">Fresh Perspectives.</h2>
+            <p class="text-body-md text-on-surface-variant mt-1" id="collection-summary">Six foundational footwear and leather pieces handcrafted for bold journeys.</p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2" role="group" aria-label="Filter the collection">
+            <span class="label-md text-on-surface-variant mr-1">Displaying:</span>
+            <button type="button" class="chip" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="chip" data-filter="slippers" aria-pressed="false">Slippers</button>
+            <button type="button" class="chip" data-filter="shoes" aria-pressed="false">Shoes</button>
+            <button type="button" class="chip" data-filter="sandals" aria-pressed="false">Sandals</button>
+            <button type="button" class="chip" data-filter="platforms" aria-pressed="false">Platforms</button>
+            <button type="button" class="chip" data-filter="bags" aria-pressed="false">Bags</button>
+          </div>
+        </div>
+
+        <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter" aria-live="polite"></div>
+
+        <div class="mt-space-xl p-space-md md:p-space-lg bg-surface-container flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+          <div class="max-w-xl">
+            <span class="label text-secondary">Commission &amp; Bespoke Lasts</span>
+            <h3 class="font-serif text-headline-sm text-primary mt-1">Need a custom half-size or unique width fitting?</h3>
+            <p class="text-body-sm text-on-surface-variant mt-1">Our master cobblers craft tailored footwear shaped specifically to your anatomical measurements.</p>
+          </div>
+          <a href="https://wa.me/2348066940895?text=Hello%20Josie%20Footies%2C%20I%27d%20like%20a%20bespoke%20fitting%20consultation." target="_blank" rel="noopener noreferrer" class="btn-primary btn-sm whitespace-nowrap">
+            <span class="material-symbols-outlined text-[18px] text-gold">chat</span>Consult Concierge
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DEPARTMENTS ============ -->
+    <section id="departments" class="w-full py-space-xl px-margin-mobile lg:px-margin max-w-canvas mx-auto">
+      <div class="mb-space-lg text-center max-w-2xl mx-auto reveal">
+        <span class="label text-secondary">Curated Departments</span>
+        <h2 class="font-serif text-headline-lg-mobile md:text-headline-lg text-primary mt-1">Shop By Architecture.</h2>
+        <p class="text-body-md text-on-surface-variant mt-2">Explore silhouettes conceived through sculptural lines and unyielding tactile refinement.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-mobile md:gap-gutter">
+        <a href="#collection" data-filter-link="shoes" class="md:col-span-7 group relative overflow-hidden bg-surface-container aspect-[16/10] block">
+          <img data-img="deptShoes" alt="Model wearing tailored leather shoes walking over granite steps" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-space-md text-on-primary">
+            <span class="label text-gold">Department 01</span>
+            <h3 class="font-serif text-headline-md mt-1">Shoes</h3>
+            <p class="text-body-sm text-on-primary/80 max-w-sm mt-1">Contemporary tailored unisex loafers, monks, and sleek architectural evening shoes.</p>
+            <span class="mt-space-sm link-editorial text-on-primary group-hover:text-gold">Explore Shoes →</span>
+          </div>
+        </a>
+        <a href="#collection" data-filter-link="sandals" class="md:col-span-5 group relative overflow-hidden bg-surface-container aspect-[16/10] md:aspect-auto block">
+          <img data-img="deptSandals" alt="Artisanal leather cross-strap sandals on a limestone floor in afternoon sun" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-space-md text-on-primary">
+            <span class="label text-gold">Department 02</span>
+            <h3 class="font-serif text-headline-md mt-1">Sandals</h3>
+            <p class="text-body-sm text-on-primary/80 mt-1">Architectural strappy luxury crafted for effortless climate versatility.</p>
+            <span class="mt-space-sm link-editorial text-on-primary group-hover:text-gold">Explore Sandals →</span>
+          </div>
+        </a>
+        <a href="#collection" data-filter-link="slippers" class="md:col-span-4 group relative overflow-hidden bg-surface-container aspect-[4/3] block">
+          <img data-img="deptSlippers" alt="Black minimalist slide slippers resting on raw silk" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-space-md text-on-primary">
+            <span class="label text-gold">Department 03</span>
+            <h3 class="font-serif text-headline-sm mt-1 uppercase">Slippers</h3>
+            <span class="mt-2 link-editorial !text-label-sm text-on-primary group-hover:text-gold">Shop Slippers →</span>
+          </div>
+        </a>
+        <a href="#collection" data-filter-link="platforms" class="md:col-span-4 group relative overflow-hidden bg-surface-container aspect-[4/3] block">
+          <img data-img="deptPlatforms" alt="Sculpted bone-white platform slide on a charcoal block" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-space-md text-on-primary">
+            <span class="label text-gold">Department 04</span>
+            <h3 class="font-serif text-headline-sm mt-1 uppercase">Platforms</h3>
+            <span class="mt-2 link-editorial !text-label-sm text-on-primary group-hover:text-gold">Shop Platforms →</span>
+          </div>
+        </a>
+        <a href="#collection" data-filter-link="bags" class="md:col-span-4 group relative overflow-hidden bg-surface-container aspect-[4/3] block">
+          <img data-img="deptBags" alt="Structured leather tote beside a wooden atelier form" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-space-md text-on-primary">
+            <span class="label text-gold">Department 05</span>
+            <h3 class="font-serif text-headline-sm mt-1 uppercase">Leather Bags</h3>
+            <span class="mt-2 link-editorial !text-label-sm text-on-primary group-hover:text-gold">Shop Bags →</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ HERITAGE ============ -->
+    <section id="heritage" class="w-full bg-surface-container-low">
+      <div class="py-space-xl px-margin-mobile lg:px-margin max-w-canvas mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+        <div class="lg:col-span-6 relative reveal">
+          <div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
+            <img data-img="atelier" alt="Nigerian leather artisan in the Ring Road atelier, Ibadan, measuring calf hide" loading="lazy" class="w-full h-full object-cover" />
+            <div class="absolute top-4 left-4 glass hairline p-space-sm max-w-xs">
+              <span class="label text-secondary">Atelier Archive</span>
+              <p class="font-serif text-headline-sm text-primary mt-1">Ring Road • Ibadan</p>
+              <p class="text-body-sm text-on-surface-variant mt-1">No. 24, Off Anfani Layout, Ring Road, Ibadan, Oyo State</p>
+            </div>
+          </div>
+          <div class="hidden sm:block absolute -bottom-8 -right-6 w-3/5 bg-surface p-space-md border border-charcoal/20">
+            <span class="label text-primary">Lagos Studio</span>
+            <p class="text-body-sm text-on-surface-variant mt-1">New Garage, Gbagada • Rapid fittings &amp; same-day delivery hub across Lagos Island &amp; Mainland.</p>
+          </div>
+        </div>
+        <div class="lg:col-span-6 lg:pl-space-md mt-10 lg:mt-0 reveal">
+          <span class="label text-secondary">Provenance &amp; Mastery</span>
+          <h2 class="font-serif text-headline-lg-mobile md:text-headline-lg text-primary mt-1 mb-space-md">
+            Crafted With Intention. <span class="italic">Worn With Confidence.</span>
+          </h2>
+          <p class="text-body-lg text-on-surface-variant mb-space-md">
+            Every piece in the Josie Footies archive is sculpted by hand between our master shoemaking roots in Ibadan and our styling studios in Gbagada, Lagos. We honor the deep tradition of West African leather finishing while engineering European minimalist architectural silhouettes.
+          </p>
+          <ul class="space-y-space-sm">
+            <li class="p-space-sm bg-surface hairline flex items-start gap-4">
+              <span class="w-10 h-10 bg-surface-container flex items-center justify-center shrink-0 text-primary"><span class="material-symbols-outlined text-[22px]">architecture</span></span>
+              <div><h3 class="font-serif text-lg font-medium text-primary">Architectural Lasts &amp; Ergonomics</h3><p class="text-body-sm text-on-surface-variant mt-1">Specially contoured lasts crafted to distribute foot strike evenly, allowing all-day ease from morning boardrooms to evening galas.</p></div>
+            </li>
+            <li class="p-space-sm bg-surface hairline flex items-start gap-4">
+              <span class="w-10 h-10 bg-surface-container flex items-center justify-center shrink-0 text-primary"><span class="material-symbols-outlined text-[22px]">verified</span></span>
+              <div><h3 class="font-serif text-lg font-medium text-primary">Full-Grain Leather Provenance</h3><p class="text-body-sm text-on-surface-variant mt-1">We source ethical, vegetable-tanned hides known for deep patina evolution that grows more lustrous with every journey.</p></div>
+            </li>
+            <li class="p-space-sm bg-surface hairline flex items-start gap-4">
+              <span class="w-10 h-10 bg-surface-container flex items-center justify-center shrink-0 text-primary"><span class="material-symbols-outlined text-[22px]">handshake</span></span>
+              <div><h3 class="font-serif text-lg font-medium text-primary">Personalized Bespoke Fit</h3><p class="text-body-sm text-on-surface-variant mt-1">Direct communication with our master cordwainers via WhatsApp ensures each pair accommodates exact foot geometry.</p></div>
+            </li>
+          </ul>
+          <div class="mt-space-lg flex flex-col sm:flex-row sm:items-center gap-space-md">
+            <a href="https://wa.me/2348066940895?text=Hello%20Josie%20Footies%2C%20I%27d%20like%20to%20book%20a%20fitting%20consultation." target="_blank" rel="noopener noreferrer" class="btn-primary btn-sm">Book Fitting Consultation</a>
+            <a href="tel:+2349133938212" class="label text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1">
+              <span class="material-symbols-outlined text-[16px]">call</span>Lagos: +234 913 393 8212
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CAMPAIGN ============ -->
+    <section class="relative w-full py-space-xl">
+      <div class="w-full max-w-canvas mx-auto px-margin-mobile lg:px-margin">
+        <div class="relative overflow-hidden bg-obsidian min-h-[560px] flex items-center">
+          <div class="absolute inset-0" aria-hidden="true">
+            <div data-bg="campaign" class="w-full h-full bg-cover bg-center"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/70 to-primary/10"></div>
+          </div>
+          <div class="relative z-10 max-w-xl p-space-md py-space-lg lg:p-space-xl text-on-primary reveal">
+            <span class="label text-gold">2025 Editorial Campaign</span>
+            <h2 class="font-serif text-headline-xl-mobile md:text-headline-xl mt-2 mb-space-md">
+              Your Presence <span class="italic text-secondary-fixed">Speaks</span> Before You Do.
+            </h2>
+            <p class="text-body-lg text-on-primary/90 mb-space-lg">
+              Find the pieces that express who you are, without saying a word. Walk into every room with quiet authority and artisanal authenticity.
+            </p>
+            <div class="flex flex-wrap items-center gap-space-md">
+              <a href="#collection" data-filter-link="all" class="btn-light btn-sm">Shop The Campaign</a>
+              <span class="font-serif italic text-gold text-base">“...In every step you take, be bold.”</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEWSLETTER ============ -->
+    <section class="w-full pb-space-xl px-margin-mobile lg:px-margin max-w-canvas mx-auto">
+      <div class="max-w-3xl mx-auto text-center p-space-md py-space-lg md:p-space-lg bg-surface-container">
+        <span class="label text-secondary">Maison Communiqué</span>
+        <h2 class="font-serif text-headline-lg-mobile md:text-headline-lg text-primary mt-1 mb-2">Stay In Step.</h2>
+        <p class="text-body-md text-on-surface-variant mb-space-md max-w-lg mx-auto">
+          Receive privileged invitations to private atelier drops, bespoke seasonal runs, and cultural dispatches from Ibadan &amp; Lagos.
+        </p>
+        <form id="newsletter-form" class="max-w-md mx-auto flex flex-col sm:flex-row gap-2" novalidate>
+          <label for="newsletter-email" class="sr-only">Email address</label>
+          <input id="newsletter-email" type="email" required autocomplete="email" placeholder="Enter your email address" class="field flex-1" />
+          <button type="submit" class="btn-primary btn-sm whitespace-nowrap">Join Salon</button>
+        </form>
+        <p id="newsletter-error" class="hidden mt-3 label text-error">Please enter a valid email address.</p>
+        <p id="newsletter-success" class="hidden mt-3 label text-secondary">Thank you. You have been placed on the private atelier register.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="w-full bg-surface-container-low text-on-surface pt-space-xl pb-space-lg border-t border-stone">
+    <div class="w-full max-w-canvas mx-auto px-margin-mobile lg:px-margin">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter mb-space-xl">
+        <div class="lg:col-span-2 lg:pr-space-lg">
+          <div class="flex items-center gap-3 mb-space-sm">
+            <img data-img="logo" alt="" class="h-8 w-auto object-contain bg-transparent" data-hide-on-error />
+            <span class="font-serif text-headline-sm uppercase tracking-wider text-primary">Josie Footies</span>
+          </div>
+          <p class="font-serif text-headline-sm italic text-secondary mb-space-sm">“...In every step you take, be bold.”</p>
+          <p class="text-body-md text-on-surface-variant max-w-md mb-space-md">An intimate footwear maison honoring bespoke West African leather craftsmanship through strict European architectural minimalism. Tailored for bold movement.</p>
+          <div class="flex flex-col gap-1 text-on-surface-variant text-body-sm">
+            <span class="label text-primary">Direct Atelier Concierge</span>
+            <a class="hover:text-primary transition-colors" href="tel:+2348066940895">+234 806 694 0895 (Ibadan &amp; Global)</a>
+            <a class="hover:text-primary transition-colors" href="tel:+2349133938212">+234 913 393 8212 (Lagos Studio)</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="label-md text-primary mb-space-md">Collections</h4>
+          <ul class="space-y-space-xs text-body-sm text-on-surface-variant">
+            <li><a class="hover:text-primary transition-colors" href="#collection" data-filter-link="shoes">Shoes &amp; Loafers</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#collection" data-filter-link="sandals">Artisanal Sandals</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#collection" data-filter-link="slippers">Couture Slippers</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#collection" data-filter-link="platforms">Platforms &amp; Wedges</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#collection" data-filter-link="bags">Structured Leather Bags</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#collection" data-filter-link="all">The New Palette</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="label-md text-primary mb-space-md">Client Care</h4>
+          <ul class="space-y-space-xs text-body-sm text-on-surface-variant">
+            <li><button type="button" class="hover:text-primary transition-colors text-left" data-info="shipping">Express Delivery &amp; Shipping</button></li>
+            <li><button type="button" class="hover:text-primary transition-colors text-left" data-info="sizing">Bespoke Sizing Consultation</button></li>
+            <li><button type="button" class="hover:text-primary transition-colors text-left" data-info="care">Leather Provenance &amp; Care</button></li>
+            <li><button type="button" class="hover:text-primary transition-colors text-left" data-info="returns">Returns &amp; Atelier Exchanges</button></li>
+            <li><a class="hover:text-primary transition-colors" href="https://wa.me/2348066940895" target="_blank" rel="noopener noreferrer">WhatsApp Private Client</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="label-md text-primary mb-space-md">Maison &amp; Studios</h4>
+          <div class="space-y-space-md text-body-sm text-on-surface-variant">
+            <div><p class="label text-primary">Ibadan Flagship</p><p class="mt-1">No. 24, Off Anfani Layout, Ring Road, Ibadan, Oyo State</p></div>
+            <div><p class="label text-primary">Lagos Atelier</p><p class="mt-1">New Garage, Gbagada, Lagos State, Nigeria</p></div>
+            <a class="link-editorial !text-label-sm text-secondary hover:text-primary" href="#heritage">Discover Maison Heritage →</a>
+          </div>
+        </div>
+      </div>
+      <div class="pt-space-md border-t border-stone flex flex-col md:flex-row items-center justify-between gap-space-sm label text-on-surface-variant text-center">
+        <div>© <span data-year>2025</span> Josie Footies Maison. All Rights Reserved.</div>
+        <div class="flex flex-wrap justify-center items-center gap-x-space-md gap-y-1"><span class="text-primary">Paystack Ready</span><span>•</span><span>Verve</span><span>•</span><span>Mastercard</span><span>•</span><span>Visa</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ OVERLAYS ============ -->
+  <div id="scrim" class="fixed inset-0 z-[95] bg-obsidian/50 opacity-0 pointer-events-none transition-opacity duration-500" data-action="close-overlays"></div>
+
+  <!-- Shopping bag drawer -->
+  <aside id="cart-drawer" class="fixed inset-y-0 right-0 z-[100] w-full max-w-md bg-surface border-l border-charcoal/20 translate-x-full transition-transform duration-500 ease-in-out flex flex-col" aria-label="Shopping bag" aria-hidden="true">
+    <div class="p-space-md bg-surface-container-low flex items-center justify-between border-b border-stone">
+      <div class="flex items-center gap-2">
+        <h2 class="font-serif text-headline-sm text-primary">Shopping Bag</h2>
+        <span data-count="cart" class="px-2 py-0.5 bg-obsidian text-ivory label">0</span>
+      </div>
+      <button type="button" aria-label="Close shopping bag" class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary" data-action="close-overlays"><span class="material-symbols-outlined text-[24px]">close</span></button>
+    </div>
+    <div class="px-space-md py-3 bg-surface-container text-on-surface-variant label">
+      <div class="flex items-center justify-between mb-1.5 gap-2">
+        <span id="delivery-message">Nigeria Express Delivery:</span>
+        <span class="text-primary text-right">Complimentary over ₦100,000</span>
+      </div>
+      <div class="w-full bg-surface-container-highest h-1 overflow-hidden"><div id="cart-progress" class="bg-gold h-full transition-all duration-500" style="width:0%"></div></div>
+    </div>
+    <div id="cart-items" class="flex-1 overflow-y-auto p-space-md space-y-space-sm"></div>
+    <div class="p-space-md bg-surface-container-low border-t border-stone flex flex-col gap-space-xs">
+      <div class="flex items-center justify-between">
+        <span class="label text-on-surface-variant">Estimated Subtotal</span>
+        <span id="cart-subtotal" class="font-serif text-headline-sm text-primary font-semibold">₦0</span>
+      </div>
+      <p class="label text-on-surface-variant">Taxes &amp; Nigeria Same-Day Express calculated at checkout.</p>
+      <div class="grid gap-2 mt-2">
+        <button type="button" class="btn-primary w-full" data-action="checkout"><span>Proceed To Secure Checkout</span><span class="material-symbols-outlined text-[18px]">lock</span></button>
+        <button type="button" class="btn w-full py-2.5 bg-surface-container text-on-surface hover:text-primary !text-label-sm" data-action="checkout-whatsapp"><span class="material-symbols-outlined text-[16px] text-secondary">chat</span>Pay via WhatsApp Concierge</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Wishlist drawer -->
+  <aside id="wishlist-drawer" class="fixed inset-y-0 right-0 z-[100] w-full max-w-md bg-surface border-l border-charcoal/20 translate-x-full transition-transform duration-500 ease-in-out flex flex-col" aria-label="Wishlist" aria-hidden="true">
+    <div class="p-space-md bg-surface-container-low flex items-center justify-between border-b border-stone">
+      <div class="flex items-center gap-2">
+        <h2 class="font-serif text-headline-sm text-primary">Private Wishlist</h2>
+        <span data-count="wishlist" class="px-2 py-0.5 bg-secondary text-on-secondary label">0</span>
+      </div>
+      <button type="button" aria-label="Close wishlist" class="w-8 h-8 flex items-center justify-center text-on-surface-variant hover:text-primary" data-action="close-overlays"><span class="material-symbols-outlined text-[24px]">close</span></button>
+    </div>
+    <div id="wishlist-items" class="flex-1 overflow-y-auto p-space-md space-y-space-sm"></div>
+  </aside>
+
+  <!-- Quick view -->
+  <div id="quickview" class="fixed inset-0 z-[110] hidden items-center justify-center p-4 bg-obsidian/60 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="qv-title">
+    <div class="bg-surface max-w-4xl w-full max-h-[92vh] overflow-y-auto relative flex flex-col md:flex-row border border-charcoal/20">
+      <button type="button" aria-label="Close" class="absolute top-3 right-3 z-20 w-9 h-9 glass hairline text-primary flex items-center justify-center" data-action="close-quickview"><span class="material-symbols-outlined text-[20px]">close</span></button>
+      <div class="md:w-1/2 aspect-[4/5] md:aspect-auto md:min-h-[520px] bg-surface-container relative shrink-0">
+        <img id="qv-image" alt="" class="absolute inset-0 w-full h-full object-cover" />
+      </div>
+      <div class="md:w-1/2 p-space-md md:p-space-lg flex flex-col justify-between">
+        <div>
+          <span id="qv-category" class="label text-secondary"></span>
+          <h3 id="qv-title" class="font-serif text-headline-sm md:text-headline-md text-primary mt-1"></h3>
+          <div class="flex items-baseline gap-3 mt-2">
+            <span id="qv-price" class="text-body-lg font-semibold text-primary"></span>
+            <span id="qv-colour" class="label text-on-surface-variant"></span>
+          </div>
+          <p id="qv-description" class="text-body-sm text-on-surface-variant mt-space-sm"></p>
+          <div id="qv-size-block" class="mt-space-md">
+            <div class="flex items-center justify-between mb-2">
+              <span class="label text-primary">Select Size (EU)</span>
+              <button type="button" class="label text-secondary hover:underline underline-offset-4" data-info="sizing">Size Guide</button>
+            </div>
+            <div id="qv-sizes" class="grid grid-cols-5 sm:grid-cols-6 gap-1.5" role="radiogroup" aria-label="EU size"></div>
+            <p id="qv-size-hint" class="hidden mt-2 label text-error">Please select your size.</p>
+          </div>
+        </div>
+        <div class="mt-space-md flex flex-col gap-2">
+          <button type="button" id="qv-add" class="btn-primary w-full">Add To Shopping Bag</button>
+          <button type="button" id="qv-wish" class="btn-secondary w-full !py-3 !text-label-sm"><span class="material-symbols-outlined text-[18px]">favorite</span><span>Save To Wishlist</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search -->
+  <div id="search" class="fixed inset-0 z-[110] hidden flex-col bg-surface/95 backdrop-blur-md" role="dialog" aria-modal="true" aria-label="Search the archive">
+    <div class="w-full max-w-3xl mx-auto px-margin-mobile pt-space-lg">
+      <div class="flex items-center gap-3 border-b border-obsidian pb-3">
+        <span class="material-symbols-outlined text-[26px] text-on-surface-variant">search</span>
+        <label for="search-input" class="sr-only">Search</label>
+        <input id="search-input" type="search" autocomplete="off" placeholder="Search the archive: loafer, sandal, tote…" class="flex-1 bg-transparent font-serif text-[22px] md:text-headline-sm focus:outline-none placeholder:text-on-surface-variant/60" />
+        <button type="button" aria-label="Close search" data-action="close-search" class="p-1"><span class="material-symbols-outlined text-[26px]">close</span></button>
+      </div>
+      <div id="search-results" class="py-space-md max-h-[70vh] overflow-y-auto"></div>
+    </div>
+  </div>
+
+  <!-- Client care / info panel -->
+  <div id="info" class="fixed inset-0 z-[120] hidden items-center justify-center p-4 bg-obsidian/60 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="info-title">
+    <div class="bg-surface max-w-xl w-full max-h-[90vh] overflow-y-auto relative p-space-md md:p-space-lg border border-charcoal/20">
+      <button type="button" aria-label="Close" class="absolute top-3 right-3 w-9 h-9 flex items-center justify-center text-primary" data-action="close-info"><span class="material-symbols-outlined text-[20px]">close</span></button>
+      <span id="info-eyebrow" class="label text-secondary"></span>
+      <h3 id="info-title" class="font-serif text-headline-md text-primary mt-1 mb-space-sm"></h3>
+      <div id="info-body" class="text-body-sm text-on-surface-variant space-y-3"></div>
+    </div>
+  </div>
+
+  <!-- Floating concierge -->
+  <a href="https://wa.me/2348066940895" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-40 bg-surface text-primary p-3 hairline flex items-center gap-2 hover:bg-surface-container-high transition-colors" title="Chat with Josie Footies Concierge">
+    <span class="w-2.5 h-2.5 bg-[#25D366] animate-pulse"></span>
+    <span class="material-symbols-outlined text-[22px] text-secondary">chat</span>
+    <span class="label text-primary hidden sm:inline">Atelier Concierge</span>
+  </a>
+
+  <!-- Toast -->
+  <div id="toast" role="status" aria-live="polite" class="fixed top-28 sm:top-auto sm:bottom-6 left-6 right-6 sm:right-auto z-[130] bg-obsidian text-ivory px-5 py-3 label flex items-center gap-3 translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
+    <span class="material-symbols-outlined text-[18px] text-gold">check_circle</span>
+    <span id="toast-text"></span>
+  </div>
+
+  <script src="assets/js/images.js"></script>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

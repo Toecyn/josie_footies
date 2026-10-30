@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; scroll-padding-top: 7.5rem; }
+  body { @apply bg-surface text-on-surface font-sans text-body-md antialiased; overscroll-behavior-y: none; }
+  ::selection { @apply bg-secondary-fixed text-primary; }
+  :focus-visible { outline: 1px solid #c6a56b; outline-offset: 3px; }
+  img { @apply bg-surface-container; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; line-height: 1; }
+  .material-symbols-outlined.filled { font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+  }
+}
+
+@layer components {
+  .label { @apply font-sans text-label-sm uppercase; }
+  .label-md { @apply font-sans text-label-md uppercase; }
+
+  /* Buttons (DESIGN.md › Components) */
+  .btn { @apply inline-flex items-center justify-center gap-2 font-sans text-label-md uppercase px-10 py-4 transition-colors duration-300 border border-transparent; }
+  .btn-primary { @apply btn bg-obsidian text-ivory hover:bg-charcoal hover:border-gold; }
+  .btn-secondary { @apply btn bg-transparent text-obsidian border-obsidian hover:bg-obsidian hover:text-ivory; }
+  .btn-light { @apply btn bg-ivory text-obsidian hover:bg-secondary hover:text-on-secondary; }
+  .btn-sm { @apply px-6 py-3; }
+
+  /* Tertiary editorial link: gold baseline, wipes to obsidian on hover */
+  .link-editorial { @apply relative inline-flex items-center gap-2 font-sans text-label-md uppercase pb-1.5; background: linear-gradient(currentColor, currentColor) left bottom / 0 1px no-repeat, linear-gradient(#c6a56b, #c6a56b) left bottom / 100% 1px no-repeat; transition: background-size .4s ease, color .3s ease; }
+  .link-editorial:hover { background-size: 100% 1px, 100% 1px; }
+
+  .chip { @apply px-3 py-1.5 font-sans text-label-sm uppercase transition-colors border border-transparent; }
+  .chip[aria-pressed="true"] { @apply bg-obsidian text-ivory; }
+  .chip[aria-pressed="false"] { @apply bg-surface-container text-on-surface hover:border-obsidian/30; }
+
+  .hairline { @apply border border-charcoal/15; }
+  .glass { @apply bg-ivory/90 backdrop-blur-[8px]; }
+
+  .field { @apply w-full px-4 py-3.5 bg-surface text-primary font-sans text-body-sm border border-charcoal/20 focus:outline-none focus:border-obsidian placeholder:text-on-surface-variant/70; }
+
+  .size-btn { @apply py-2.5 text-center font-sans text-label-sm border transition-colors; }
+  .size-btn[aria-pressed="true"] { @apply bg-obsidian text-ivory border-obsidian; }
+  .size-btn[aria-pressed="false"] { @apply bg-surface-container text-primary border-transparent hover:border-obsidian/40; }
+
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity .9s ease, transform .9s ease; }
+  .reveal.is-visible { opacity: 1; transform: none; }
+}
