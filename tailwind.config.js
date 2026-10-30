@@ -48,8 +48,9 @@ module.exports = {
         margin: '4rem',
       },
       fontFamily: {
-        serif: ['"Playfair Display"', 'Georgia', 'serif'],
-        sans: ['Manrope', 'system-ui', 'sans-serif'],
+        // Lato throughout: `font-serif` (headlines) and `font-sans` (body) share one family.
+        serif: ['Lato', 'system-ui', 'sans-serif'],
+        sans: ['Lato', 'system-ui', 'sans-serif'],
       },
       fontSize: {
         'headline-xl': ['72px', { lineHeight: '80px', letterSpacing: '-0.02em', fontWeight: '400' }],

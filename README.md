@@ -14,7 +14,7 @@ Static, dependency-free storefront built from the Stitch design export (`DESIGN.
 - `assets/js/products.js`: product catalogue (name, price, sizes, colours, description). Edit here to add or change products.
 - `assets/js/images.js`: every image URL in one place. Swap for your own hosted photos.
 - `assets/js/app.js`: filters, quick view with size selection, bag, wishlist, search, checkout, client care panels
-- `tailwind.config.js` and `src/input.css`: design tokens from DESIGN.md (0px radius, no blur shadows, Playfair Display and Manrope)
+- `tailwind.config.js` and `src/input.css`: design tokens from DESIGN.md (0px radius, no blur shadows), set in Lato
 
 ## Notes
 
