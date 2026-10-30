@@ -1,6 +1,6 @@
 /* Central image map. Swap any URL for your own hosted photography (e.g. assets/img/hero.jpg). */
 window.JF_IMAGES = {
-  logo: 'https://lh3.googleusercontent.com/aida/AEtjO1X-FKrTf0Qm0dohpxOGTrX_U9vzoYc4UNOT9_zgnPQ0B_ejkKjWiW1m2mgca_hXpgOq-V3OA2qX1topHD24-4xVoUSq9PHXq2Ls7ciDSteVPxm-3rQGlPGxygfLqlaDxCFlIFKc8mA4kkoG6cyr6AL8Q4apYcQQTIgKmLbuLHhP_8usrLtJyshcuGY6rrrzy-BwD3zdYR1J3xAkIPDk1udLepoqWBV4kOAEQjRITqFeNQ',
+  logo: 'assets/img/logo-gold.png',
   hero: 'assets/img/hero-editorial.jpg',
   plate01: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD14IEKh6u-1gFr4zLcEP38gYNoqbnvv6vJ-u0gsoz72IV7VmDZBfS6NnSAZoYMWI1cTH362qd0mycWBOHdvxY7UUPS8AoL0uFH1Yh3Od1lUqVJZOB5DRrH1hgUwcspbuIRfvrkyFsR4nQn7_tUwIU4HC46zKUu6PJItsUVOhvXhfDmkPNQMnMVq9kpxYy70g73VAk3Vz8GNBSRDix8zdWUeJx176q-9LRSyYzCMzPR',
   p1: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC9eOeOBPNN84vapgM2QlqiP8bssrblD5pTIO-ViKpkwdjKrqF4wusenz4vwCZ9g_HndrieJJVGbpqqNZPYCiMXGghhABwc4ZyRf9hR2Mk4LM1_NR08jlOu02kw9ViXnMzri4_o3pDGnohwTvNMBU8k9Wt4lYcBgkmSt69v-Jue9aaiHQOv1uS2j1fm0O2UlX-NbLlDzWbTt5RkMfXxC7C5oFN6akyXMBm99qlTRN83',
