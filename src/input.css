@@ -3,9 +3,70 @@
 @tailwind utilities;
 
 @layer base {
+  /* Theme tokens as RGB channels (see tailwind.config.js). Light is the default; .dark on <html> switches. */
+  :root {
+    color-scheme: light;
+    --c-surface: 251 249 244;
+    --c-surface-dim: 219 218 213;
+    --c-surface-bright: 251 249 244;
+    --c-surface-container-lowest: 255 255 255;
+    --c-surface-container-low: 245 243 238;
+    --c-surface-container: 240 238 233;
+    --c-surface-container-high: 234 232 227;
+    --c-surface-container-highest: 228 226 221;
+    --c-on-surface: 27 28 25;
+    --c-on-surface-variant: 68 71 72;
+    --c-inverse-surface: 48 49 46;
+    --c-inverse-on-surface: 242 241 236;
+    --c-outline: 116 120 120;
+    --c-outline-variant: 196 199 199;
+    --c-surface-tint: 95 94 94;
+    --c-primary: 0 0 0;
+    --c-on-primary: 255 255 255;
+    --c-primary-container: 28 27 27;
+    --c-secondary: 117 90 40;
+    --c-on-secondary: 255 255 255;
+    --c-secondary-container: 255 219 157;
+    --c-obsidian: 17 17 17;
+    --c-charcoal: 41 41 41;
+    --c-ivory: 247 245 240;
+    --c-stone: 232 229 223;
+    --c-error: 186 26 26;
+  }
+  /* Dark: warm near-black surfaces, ivory ink, champagne gold accent. Obsidian/ivory swap so buttons invert. */
+  .dark {
+    color-scheme: dark;
+    --c-surface: 18 18 17;
+    --c-surface-dim: 14 14 13;
+    --c-surface-bright: 42 42 40;
+    --c-surface-container-lowest: 13 13 12;
+    --c-surface-container-low: 26 26 24;
+    --c-surface-container: 33 33 31;
+    --c-surface-container-high: 43 43 41;
+    --c-surface-container-highest: 54 54 51;
+    --c-on-surface: 230 227 220;
+    --c-on-surface-variant: 185 182 174;
+    --c-inverse-surface: 230 227 220;
+    --c-inverse-on-surface: 48 49 46;
+    --c-outline: 142 145 143;
+    --c-outline-variant: 68 71 72;
+    --c-surface-tint: 200 198 197;
+    --c-primary: 242 239 232;
+    --c-on-primary: 17 17 17;
+    --c-primary-container: 229 226 225;
+    --c-secondary: 229 194 133;
+    --c-on-secondary: 39 25 0;
+    --c-secondary-container: 91 67 18;
+    --c-obsidian: 242 239 232;
+    --c-charcoal: 216 212 204;
+    --c-ivory: 17 17 17;
+    --c-stone: 54 54 51;
+    --c-error: 255 180 171;
+  }
+
   html { scroll-behavior: smooth; scroll-padding-top: 7.5rem; }
   body { @apply bg-surface text-on-surface font-sans text-body-md antialiased; overscroll-behavior-y: none; }
-  ::selection { @apply bg-secondary-fixed text-primary; }
+  ::selection { @apply bg-secondary-fixed text-ink; }
   :focus-visible { outline: 1px solid #c6a56b; outline-offset: 3px; }
   img { @apply bg-surface-container; }
   .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; line-height: 1; }
@@ -24,7 +85,8 @@
   .btn { @apply inline-flex items-center justify-center gap-2 font-sans text-label-md uppercase px-10 py-4 transition-colors duration-300 border border-transparent; }
   .btn-primary { @apply btn bg-obsidian text-ivory hover:bg-charcoal hover:border-gold; }
   .btn-secondary { @apply btn bg-transparent text-obsidian border-obsidian hover:bg-obsidian hover:text-ivory; }
-  .btn-light { @apply btn bg-ivory text-obsidian hover:bg-secondary hover:text-on-secondary; }
+  /* Sits on dark photography, so it stays light in both themes. */
+  .btn-light { @apply btn bg-paper text-ink hover:bg-gold hover:text-ink; }
   .btn-sm { @apply px-6 py-3; }
 
   /* Tertiary editorial link: gold baseline, wipes to obsidian on hover */

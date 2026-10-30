@@ -6,6 +6,16 @@
   <title>Josie Footies | Handcrafted Luxury Footwear, Ibadan &amp; Lagos</title>
   <meta name="description" content="Thoughtfully crafted unisex footwear and leather goods, handmade in our Ibadan and Lagos ateliers. In every step you take, be bold." />
   <meta name="theme-color" content="#fbf9f4" />
+  <script>
+    /* Apply the saved theme (or the system preference) before first paint to avoid a flash. */
+    (function () {
+      var saved = null;
+      try { saved = localStorage.getItem('jf-theme'); } catch (_) { /* storage unavailable */ }
+      var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.classList.toggle('dark', dark);
+      document.querySelector('meta[name="theme-color"]').content = dark ? '#121211' : '#fbf9f4';
+    })();
+  </script>
   <meta property="og:title" content="Josie Footies | Make Every Step A Statement" />
   <meta property="og:description" content="Handcrafted unisex footwear and leather goods from Ibadan and Lagos." />
   <meta property="og:type" content="website" />
@@ -53,6 +63,10 @@
         <a href="https://wa.me/2348066940895" target="_blank" rel="noopener noreferrer" class="hidden md:flex items-center gap-1 label text-on-surface-variant hover:text-primary transition-colors" title="Direct WhatsApp Concierge">
           <span class="material-symbols-outlined text-[18px] text-secondary">chat</span><span>Concierge</span>
         </a>
+        <button type="button" class="text-on-surface-variant hover:text-primary transition-colors flex" aria-label="Dark mode" aria-pressed="false" data-action="toggle-theme" title="Switch light / dark">
+          <span class="material-symbols-outlined text-[22px] dark:hidden">dark_mode</span>
+          <span class="material-symbols-outlined text-[22px] hidden dark:inline">light_mode</span>
+        </button>
         <button type="button" class="text-on-surface-variant hover:text-primary transition-colors flex" aria-label="Search the archive" data-action="open-search">
           <span class="material-symbols-outlined text-[22px]">search</span>
         </button>
@@ -73,7 +87,7 @@
 
   <!-- Mobile menu -->
   <div id="mobile-menu" class="fixed inset-0 z-[90] hidden" role="dialog" aria-modal="true" aria-label="Menu">
-    <div class="absolute inset-0 bg-obsidian/50" data-action="close-menu"></div>
+    <div class="absolute inset-0 bg-ink/50" data-action="close-menu"></div>
     <div class="relative h-full w-full max-w-sm bg-surface flex flex-col">
       <div class="h-20 px-margin-mobile flex items-center justify-between border-b border-stone">
         <span class="font-serif text-headline-sm uppercase tracking-wider">Josie Footies</span>
@@ -100,7 +114,7 @@
       <div class="absolute inset-0" aria-hidden="true">
         <div data-bg="hero" class="w-full h-full bg-cover bg-center scale-105 transition-transform duration-[2500ms]" data-hero-bg></div>
         <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/45 to-surface/10"></div>
-        <div class="absolute inset-0 bg-primary/10 backdrop-blur-[1px]"></div>
+        <div class="absolute inset-0 bg-ink/10 backdrop-blur-[1px]"></div>
       </div>
       <div class="relative z-10 w-full max-w-canvas mx-auto px-margin-mobile lg:px-margin py-space-xl flex flex-col items-center text-center">
         <div class="flex items-center gap-space-xs mb-space-md bg-surface/85 backdrop-blur-md px-space-md py-1.5 hairline">
@@ -222,42 +236,42 @@
       <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-mobile md:gap-gutter">
         <a href="#collection" data-filter-link="shoes" class="md:col-span-7 group relative overflow-hidden bg-surface-container aspect-[16/10] block">
           <img data-img="deptShoes" alt="Woven leather horsebit mules from the shoes and mules atelier" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent"></div>
-          <div class="absolute bottom-0 left-0 p-space-md text-on-primary">
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-space-md text-paper">
             <span class="label text-gold">Department 01</span>
             <h3 class="font-serif text-headline-md mt-1 uppercase">Shoes &amp; Mules</h3>
-            <p class="text-body-sm text-on-primary/80 max-w-sm mt-1">Contemporary tailored unisex loafers, woven mules, and sleek architectural evening slip-ons.</p>
-            <span class="mt-space-sm link-editorial text-on-primary group-hover:text-gold">Explore Shoes →</span>
+            <p class="text-body-sm text-paper/80 max-w-sm mt-1">Contemporary tailored unisex loafers, woven mules, and sleek architectural evening slip-ons.</p>
+            <span class="mt-space-sm link-editorial text-paper group-hover:text-gold">Explore Shoes →</span>
           </div>
         </a>
         <a href="#collection" data-filter-link="sandals" class="md:col-span-5 group relative overflow-hidden bg-surface-container aspect-[16/10] md:aspect-auto block">
           <img data-img="deptSandals" alt="Artisanal leather cross-strap sandals on a limestone floor in afternoon sun" loading="lazy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent"></div>
-          <div class="absolute bottom-0 left-0 p-space-md text-on-primary">
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-space-md text-paper">
             <span class="label text-gold">Department 02</span>
             <h3 class="font-serif text-headline-md mt-1 uppercase">Sandals</h3>
-            <p class="text-body-sm text-on-primary/80 mt-1">Architectural strappy luxury crafted for effortless climate versatility.</p>
-            <span class="mt-space-sm link-editorial text-on-primary group-hover:text-gold">Explore Sandals →</span>
+            <p class="text-body-sm text-paper/80 mt-1">Architectural strappy luxury crafted for effortless climate versatility.</p>
+            <span class="mt-space-sm link-editorial text-paper group-hover:text-gold">Explore Sandals →</span>
           </div>
         </a>
         <a href="#collection" data-filter-link="slippers" class="md:col-span-6 group relative overflow-hidden bg-surface-container aspect-[16/10] block">
           <img data-img="deptSlippers" alt="Burgundy leather H-strap slide with a gold harness ring" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent"></div>
-          <div class="absolute bottom-0 left-0 p-space-md text-on-primary">
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-space-md text-paper">
             <span class="label text-gold">Department 03</span>
             <h3 class="font-serif text-headline-md mt-1 uppercase">Slippers &amp; Slides</h3>
-            <p class="text-body-sm text-on-primary/80 max-w-sm mt-1">Sculpted slides with anatomical footbeds and signature brass buckle geometries.</p>
-            <span class="mt-space-sm link-editorial text-on-primary group-hover:text-gold">Shop Slippers →</span>
+            <p class="text-body-sm text-paper/80 max-w-sm mt-1">Sculpted slides with anatomical footbeds and signature brass buckle geometries.</p>
+            <span class="mt-space-sm link-editorial text-paper group-hover:text-gold">Shop Slippers →</span>
           </div>
         </a>
         <a href="#collection" data-filter-link="bags" class="md:col-span-6 group relative overflow-hidden bg-surface-container aspect-[16/10] block">
           <img data-img="deptBags" alt="Structured black leather wristlet clutch with a gold zip" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-          <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent"></div>
-          <div class="absolute bottom-0 left-0 p-space-md text-on-primary">
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-space-md text-paper">
             <span class="label text-gold">Department 04</span>
             <h3 class="font-serif text-headline-md mt-1 uppercase">Leather Bags &amp; Clutches</h3>
-            <p class="text-body-sm text-on-primary/80 max-w-sm mt-1">Hand-finished wristlets and structured pouches cut from select full-grain calf hides.</p>
-            <span class="mt-space-sm link-editorial text-on-primary group-hover:text-gold">Shop Bags →</span>
+            <p class="text-body-sm text-paper/80 max-w-sm mt-1">Hand-finished wristlets and structured pouches cut from select full-grain calf hides.</p>
+            <span class="mt-space-sm link-editorial text-paper group-hover:text-gold">Shop Bags →</span>
           </div>
         </a>
       </div>
@@ -315,17 +329,17 @@
     <!-- ============ CAMPAIGN ============ -->
     <section class="relative w-full py-space-xl">
       <div class="w-full max-w-canvas mx-auto px-margin-mobile lg:px-margin">
-        <div class="relative overflow-hidden bg-obsidian min-h-[560px] flex items-center">
+        <div class="relative overflow-hidden bg-ink min-h-[560px] flex items-center">
           <div class="absolute inset-0" aria-hidden="true">
             <div data-bg="campaign" class="w-full h-full bg-cover bg-center"></div>
-            <div class="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/70 to-primary/10"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-ink/95 via-ink/70 to-ink/10"></div>
           </div>
-          <div class="relative z-10 max-w-xl p-space-md py-space-lg lg:p-space-xl text-on-primary reveal">
+          <div class="relative z-10 max-w-xl p-space-md py-space-lg lg:p-space-xl text-paper reveal">
             <span class="label text-gold">2025 Editorial Campaign</span>
             <h2 class="font-serif text-headline-xl-mobile md:text-headline-xl mt-2 mb-space-md">
               Your Presence <span class="italic text-secondary-fixed">Speaks</span> Before You Do.
             </h2>
-            <p class="text-body-lg text-on-primary/90 mb-space-lg">
+            <p class="text-body-lg text-paper/90 mb-space-lg">
               Find the pieces that express who you are, without saying a word. Walk into every room with quiet authority and artisanal authenticity.
             </p>
             <div class="flex flex-wrap items-center gap-space-md">
@@ -409,7 +423,7 @@
   </footer>
 
   <!-- ============ OVERLAYS ============ -->
-  <div id="scrim" class="fixed inset-0 z-[95] bg-obsidian/50 opacity-0 pointer-events-none transition-opacity duration-500" data-action="close-overlays"></div>
+  <div id="scrim" class="fixed inset-0 z-[95] bg-ink/50 opacity-0 pointer-events-none transition-opacity duration-500" data-action="close-overlays"></div>
 
   <!-- Shopping bag drawer -->
   <aside id="cart-drawer" class="fixed inset-y-0 right-0 z-[100] w-full max-w-md bg-surface border-l border-charcoal/20 translate-x-full transition-transform duration-500 ease-in-out flex flex-col" aria-label="Shopping bag" aria-hidden="true">
@@ -454,7 +468,7 @@
   </aside>
 
   <!-- Quick view -->
-  <div id="quickview" class="fixed inset-0 z-[110] hidden items-center justify-center p-4 bg-obsidian/60 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="qv-title">
+  <div id="quickview" class="fixed inset-0 z-[110] hidden items-center justify-center p-4 bg-ink/60 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="qv-title">
     <div class="bg-surface max-w-4xl w-full max-h-[92vh] overflow-y-auto relative flex flex-col md:flex-row border border-charcoal/20">
       <button type="button" aria-label="Close" class="absolute top-3 right-3 z-20 w-9 h-9 glass hairline text-primary flex items-center justify-center" data-action="close-quickview"><span class="material-symbols-outlined text-[20px]">close</span></button>
       <div class="md:w-1/2 aspect-[4/5] md:aspect-auto md:min-h-[520px] bg-surface-container relative shrink-0">
@@ -500,7 +514,7 @@
   </div>
 
   <!-- Client care / info panel -->
-  <div id="info" class="fixed inset-0 z-[120] hidden items-center justify-center p-4 bg-obsidian/60 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="info-title">
+  <div id="info" class="fixed inset-0 z-[120] hidden items-center justify-center p-4 bg-ink/60 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="info-title">
     <div class="bg-surface max-w-xl w-full max-h-[90vh] overflow-y-auto relative p-space-md md:p-space-lg border border-charcoal/20">
       <button type="button" aria-label="Close" class="absolute top-3 right-3 w-9 h-9 flex items-center justify-center text-primary" data-action="close-info"><span class="material-symbols-outlined text-[20px]">close</span></button>
       <span id="info-eyebrow" class="label text-secondary"></span>

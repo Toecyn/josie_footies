@@ -1,40 +1,31 @@
 /** Design tokens from DESIGN.md (Josie Footies Luxury Editorial). */
+
+// Themed tokens read RGB channels from CSS variables set in src/input.css (light on :root, dark on .dark),
+// so every utility, opacity modifier included, follows the active theme.
+const themed = [
+  'surface', 'surface-dim', 'surface-bright', 'surface-container-lowest', 'surface-container-low',
+  'surface-container', 'surface-container-high', 'surface-container-highest', 'on-surface',
+  'on-surface-variant', 'inverse-surface', 'inverse-on-surface', 'outline', 'outline-variant',
+  'surface-tint', 'primary', 'on-primary', 'primary-container', 'secondary', 'on-secondary',
+  'secondary-container', 'obsidian', 'charcoal', 'ivory', 'stone', 'error',
+];
+
 module.exports = {
   content: ['./index.html', './assets/js/**/*.js'],
+  darkMode: 'class',
   theme: {
     // Architectural standard: 0px radius everywhere.
     borderRadius: { none: '0', DEFAULT: '0' },
     extend: {
       colors: {
-        surface: '#fbf9f4',
-        'surface-dim': '#dbdad5',
-        'surface-bright': '#fbf9f4',
-        'surface-container-lowest': '#ffffff',
-        'surface-container-low': '#f5f3ee',
-        'surface-container': '#f0eee9',
-        'surface-container-high': '#eae8e3',
-        'surface-container-highest': '#e4e2dd',
-        'on-surface': '#1b1c19',
-        'on-surface-variant': '#444748',
-        'inverse-surface': '#30312e',
-        'inverse-on-surface': '#f2f1ec',
-        outline: '#747878',
-        'outline-variant': '#c4c7c7',
-        'surface-tint': '#5f5e5e',
-        primary: '#000000',
-        'on-primary': '#ffffff',
-        'primary-container': '#1c1b1b',
-        secondary: '#755a28',
-        'on-secondary': '#ffffff',
-        'secondary-container': '#ffdb9d',
+        ...Object.fromEntries(themed.map((name) => [name, `rgb(var(--c-${name}) / <alpha-value>)`])),
+        // Fixed in both themes.
         'secondary-fixed': '#ffdea7',
         'secondary-fixed-dim': '#e5c285',
         gold: '#c6a56b',
-        obsidian: '#111111',
-        charcoal: '#292929',
-        ivory: '#f7f5f0',
-        stone: '#e8e5df',
-        error: '#ba1a1a',
+        // Photo overlays and modal backdrops stay dark in both themes.
+        ink: '#111111',
+        paper: '#f7f5f0',
       },
       spacing: {
         'margin-mobile': '1.5rem',
