@@ -59,12 +59,11 @@
     light: 'bg-surface-container-highest text-primary',
   };
   const FILTER_COPY = {
-    all: 'Six foundational footwear and leather pieces handcrafted for bold journeys.',
-    shoes: 'Tailored loafers and mules, cut on our architectural lasts.',
+    all: 'Foundational footwear and leather pieces handcrafted in studio perfection for bold journeys.',
+    shoes: 'Tailored loafers and woven mules, cut on our architectural lasts.',
     sandals: 'Strappy, sculptural sandals for climate and occasion.',
-    slippers: 'Hand-welted slides and slippers for quiet confidence.',
-    platforms: 'Elevated soles with monumental, deliberate contours.',
-    bags: 'Structured leather carry, stitched by hand.',
+    slippers: 'Sculpted slides and mules with anatomical footbeds and signature brass hardware.',
+    bags: 'Hand-finished wristlets and structured pouches cut from full-grain calf hides.',
   };
 
   function sizeRange(p) {
@@ -93,11 +92,13 @@
           <div>
             <div class="flex items-center justify-between gap-2 text-on-surface-variant label mb-1.5">
               <span>${esc(p.category)}</span>
-              <span class="text-secondary text-right">${esc(p.colour)}</span>
+              <span class="flex items-center gap-1.5" title="Available in ${esc(p.colour)}">${(p.swatches || []).map((c) =>
+                `<span class="w-2.5 h-2.5 inline-block border border-outline/40" style="background:${esc(c)}"></span>`).join('')}</span>
             </div>
             <h3 class="font-serif text-[22px] leading-8 text-primary">${esc(p.name)}</h3>
+            <p class="text-body-sm text-on-surface-variant mt-1 line-clamp-1">${esc(p.summary)}</p>
           </div>
-          <div class="mt-space-sm pt-2 flex items-center justify-between">
+          <div class="mt-space-sm pt-2 flex items-center justify-between border-t border-stone">
             <span class="text-body-lg font-semibold text-primary">${naira(p.price)}</span>
             <span class="label text-on-surface-variant">${esc(sizeRange(p))}</span>
           </div>
@@ -361,7 +362,7 @@
   function renderSearch(q) {
     const term = q.trim().toLowerCase();
     const hits = term
-      ? PRODUCTS.filter((p) => [p.name, p.category, p.colour, p.description, ...p.tags].join(' ').toLowerCase().includes(term))
+      ? PRODUCTS.filter((p) => [p.name, p.category, p.colour, p.summary, p.description, ...p.tags].join(' ').toLowerCase().includes(term))
       : PRODUCTS;
     const box = $('#search-results');
     if (!hits.length) {
