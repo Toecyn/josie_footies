@@ -5,6 +5,7 @@
   "description": "Josie Footies luxury storefront",
   "scripts": {
     "build": "tailwindcss -i ./src/input.css -o ./assets/css/styles.css --minify",
+    "build:public": "node -e \"const fs=require('fs');fs.rmSync('public',{recursive:true,force:true});fs.mkdirSync('public');fs.cpSync('index.html','public/index.html');fs.cpSync('assets','public/assets',{recursive:true})\"",
     "dev": "tailwindcss -i ./src/input.css -o ./assets/css/styles.css --watch",
     "serve": "npx --yes serve -l 4173 ."
   },
