@@ -12,7 +12,7 @@ window.JF_IMAGES = {
   p7: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBB6iUF1AeK_UUNG9KWXO_UaiQI3xxAghC3l-DkB5BQMjkux1Ks0gl6aqjTjAPfgKiU49a0EOdSr_q0J1R9aqWT981GjavzpxJUVCtAgzn5Ypn-3dbQSARLmHJZW282BDMpH-cYhHEs-Yl85hhcP7bMXb1i8SsN8DrkI0b1re8R6dWWd90LEbIEbq2Bwvr5m-U_AfnYj_B6FWjJ8yyLMcnUIyrX_DUEvm7B0RSYQKOM',
   p8: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB1TVIODbp4Ysc-0NVgy5g5NkYzbXkPDbTQl19JPFygpNAy-0n7_ovgp94BP6zof0jA-oFs-0r6_rJx0EPGVqHpPW6e_Hpcf1pf5uOZVUPAY0rSUDKJ1wwiUpT1W9RkX-6qNd9IgN4riDyskGJDXwseNSsv3K0LVl29vC1hIbQXbXkfc_U8z_J2kw8YGTJZrxJi5NAUvjr-XnWGezfgILWF-QMDpT5MA8ckLoYrwZML',
   p9: 'assets/img/wristlet-clutch-lineup.jpg',
-  atelier: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAl87leQenggesJ_nK-qUC3t12jBot3F2y21LhkrYTLd8-QMERwQaJXr63D6zsO5StsarZnTnM69QxneNXGWSOnCJD-X1qvGQXvbt831SUrL1v-BIuw9kEhglsxPlaLpIyLClB4nGKSVqr6tt9HxbzonEYG_rvpIHjch6NRC7HNfCuZpri5v-a84wfAoTuNa-5Dw3E-gv6OyDyLkNoctss-S88Scu0bQUV5LT1dUe7s',
+  atelier: 'assets/img/atelier-artisan.jpg',
   campaign: 'assets/img/hero-editorial.jpg',
 };
 
