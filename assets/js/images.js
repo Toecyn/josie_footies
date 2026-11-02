@@ -1,6 +1,6 @@
 /* Central image map. Swap any URL for your own hosted photography (e.g. assets/img/hero.jpg). */
 window.JF_IMAGES = {
-  logo: 'assets/img/logo-gold.png',
+  logo: 'assets/img/logo-josie-collections.png',
   hero: 'assets/img/hero-walk.jpg',
   plate01: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD14IEKh6u-1gFr4zLcEP38gYNoqbnvv6vJ-u0gsoz72IV7VmDZBfS6NnSAZoYMWI1cTH362qd0mycWBOHdvxY7UUPS8AoL0uFH1Yh3Od1lUqVJZOB5DRrH1hgUwcspbuIRfvrkyFsR4nQn7_tUwIU4HC46zKUu6PJItsUVOhvXhfDmkPNQMnMVq9kpxYy70g73VAk3Vz8GNBSRDix8zdWUeJx176q-9LRSyYzCMzPR',
   p1: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC9eOeOBPNN84vapgM2QlqiP8bssrblD5pTIO-ViKpkwdjKrqF4wusenz4vwCZ9g_HndrieJJVGbpqqNZPYCiMXGghhABwc4ZyRf9hR2Mk4LM1_NR08jlOu02kw9ViXnMzri4_o3pDGnohwTvNMBU8k9Wt4lYcBgkmSt69v-Jue9aaiHQOv1uS2j1fm0O2UlX-NbLlDzWbTt5RkMfXxC7C5oFN6akyXMBm99qlTRN83',
